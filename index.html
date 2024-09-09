@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Aluno</title>
+  </head>
+  <body>
+    <h1>Cadastro de Aluno</h1>
+    <form action="#" method="get">
+      <!-- Nome do Aluno -->
+      <label name="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required />
+
+      <br>
+      </br>
+
+      <!-- Idade do Aluno -->
+
+      <label name="idade">Idade:</label>
+      <input type="number" name="idade" id="idade" required />
+
+      <br>
+      </br>
+
+      <!-- Arquivos do Aluno -->
+
+      <label name="arquivos">Arquivos:</label>
+      <input type="file" name="arquivos" id="arquivos" required multiple />
+
+      <br>
+      </br>
+
+      <!-- Email do Aluno -->
+
+      <label name="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <br>
+      </br>
+
+      <!-- Senha do Aluno -->
+
+      <label name="password">Senha:</label>
+      <input type="password" name="password" id="password" required />
+
+      <br>
+      </br>
+
+      <!-- Data de Nascimento do Aluno -->
+
+      <label name="date">Data de Nascimento:</label>
+      <input type="date" name="date" id="date" required />
+
+      <br>
+      </br>
+
+      <!-- Telefone do Aluno -->
+
+      <label name="phone">Telefone:</label>
+      <input type="tel" name="phone" id="phone" placeholder="(XX)XXXXX-XXXX" required />
+
+      <br>
+      </br>
+
+      <!-- Sexo Masculino -->
+
+      <label for="genero">Genero:</label>
+      <input
+        type="radio"
+        name="sexo"
+        id="masculino"
+        value="masculino"
+        required
+      />
+      <label for="masculino">Masculino:</label>
+
+      <!-- Sexo Feminino -->
+
+      <input type="radio" name="sexo" id="feminino" value="feminino" required />
+      <label for="feminino">Feminino:</label>
+
+      <br>
+      </br>
+
+      <!-- Estado onde o Aluno reside -->
+      <label name="state">Estado:</label>
+      <select name="state" id="state" required>
+        <option value="acre">Acre</option>
+        <option value="alagoas">Alagoas</option>
+        <option value="amapa">Amapá</option>
+        <option value="amazonas">Amazonas</option>
+        <option value="bahia">Bahía</option>
+        <option value="ceara">Ceará</option>
+        <option value="distrito_federal">Distrito Federal</option>
+        <option value="espirito_santo">Espirito Santo</option>
+        <option value="goias">Goiás</option>
+        <option value="maranhao">Maranhão</option>
+        <option value="mato_grosso">Mato Grosso</option>
+        <option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+        <option value="minas_gerais">Minas Gerais</option>
+        <option value="para">Pará</option>
+        <option value="paraiba">Paraíba</option>
+        <option value="parana">Paraná</option>
+        <option value="pernambuco">Pernambuco</option>
+        <option value="piaui">Piauí</option>
+        <option value="rio_de_janeiro">Rio de Janeiro</option>
+        <option value="rio_grande_do_norte">Rio Grande do Norte</option>
+        <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+        <option value="rondonia">Rondônia</option>
+        <option value="roraima">Roraima</option>
+        <option value="sao_paulo">São Paulo</option>
+        <option value="santa_catarina">Santa Catarina</option>
+        <option value="Sergipe">Sergipe</option>
+        <option value="tocatins">Tocantins</option>
+      </select>
+
+      <br>
+      </br>
+
+      <!-- Mensagem que o Aluno enviará -->
+
+      <label name="descricao">Mensagem:</label>
+      <textarea name="descricao" id="descricao" required rows="5" cols="50"></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
